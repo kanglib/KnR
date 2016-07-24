@@ -27,9 +27,9 @@ main()
 
     for (i = 1; i <= LENGTH_MAX + 1; i++) {
         if (i > LENGTH_MAX)
-            printf(" + ");
+            printf(" + | ");
         else
-            printf("%2d ", i);
+            printf("%2d | ", i);
         for (j = 0; j < nw[i]; j++)
             putchar('#');
         putchar('\n');
@@ -47,11 +47,11 @@ main()
                 printf(" # ");
         putchar('\n');
     }
-    for (i = 1; i < (LENGTH_MAX + 1) * 3; i++)
+    for (i = 1; i <= (LENGTH_MAX + 1) * 3; i++)
         putchar('-');
     putchar('\n');
     for (i = 1; i <= LENGTH_MAX; i++)
         printf("%2d ", i);
-    printf(" + ");
+    printf(" +");
     putchar('\n');
 }
